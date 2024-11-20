@@ -1,0 +1,57 @@
+.products {
+    padding: 50px 0;
+
+    .container {
+        ul {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            row-gap: 40px;
+            /* row의 간격을 10px로 */
+            column-gap: 10px;
+            /* column의 간격을 20px로 */
+
+            .item {
+                cursor: pointer;
+
+                .photo-wrapper {
+                    overflow: hidden;
+                    margin-bottom: 10px;
+
+                    .item-img {
+                        display: block;
+                        transition: 0.5s;
+
+                        &:hover {
+                            scale: 1.1;
+                        }
+                    }
+                }
+
+                .text {
+                    padding: 0 5px;
+                    letter-spacing: 0.04rem;
+
+                        .cate {
+                            display: block;
+                            font-size: 13px;
+                            font-weight: 500;
+                            color: #9b4229;
+                            margin-bottom: 5px;
+                        }
+
+                    h3 {
+                        font-size: 17px;
+                        font-weight: 500;
+                        margin-bottom: 10px;
+                        letter-spacing: 0.02rem;
+                    }
+
+                    .price {
+                        font-size: 14px;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+}

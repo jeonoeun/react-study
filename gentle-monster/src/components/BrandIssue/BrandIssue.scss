@@ -1,0 +1,58 @@
+.brand-issue {
+        .tab-menu {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 30px 0;
+
+            li {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                cursor: pointer;
+
+                &:hover {
+                    .img_box {
+                        outline: 1px solid #000;
+                    }
+                }
+
+                .img_box {
+                    width: 72px;
+                    height: 72px;
+                    border-radius: 50%;
+                    margin-bottom: 10px;
+                    overflow: hidden;
+                    outline: 1px solid #fff;
+                    transition: outline-color 0.5s;
+
+                    .tab-img {
+                        display: block;
+                        width: 72px;
+                        height: 72px;
+                        border-radius: 50%;
+                        padding: 3px;
+                    }
+                }
+
+                .tab-title {
+                    max-width: 53px;
+                    text-align: center;
+                    font-size: 12px;
+                    font-weight: 500;
+                    line-height: 1.5rem;
+                }
+            }
+
+            .active {
+                .img_box {
+                    outline: 1px solid #000;
+                }
+            }
+        }
+
+        .tab-content {
+            background-color: #000;
+            color: #fff;
+        }
+}
