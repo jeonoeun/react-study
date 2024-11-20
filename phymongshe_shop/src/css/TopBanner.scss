@@ -1,0 +1,25 @@
+@use 'common';
+
+.TopBanner {
+    position: relative;
+    background: common.$mainColor;
+    color: common.$wColor;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 1.5rem;
+
+    .icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%);
+
+        &.left {
+            margin: 0 0 0 -200px;
+        }
+
+        &.right {
+            margin: 0 0 0 200px;
+        }
+    }
+}

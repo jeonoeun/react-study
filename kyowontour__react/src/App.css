@@ -1,0 +1,261 @@
+@font-face {
+  font-family: 'twayfly';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_tway@1.0/twayfly.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* * {
+  outline: 1px solid #5CB8E4;
+} */
+
+body {
+  letter-spacing: 0.04em;
+  color: #222;
+}
+
+button {
+  outline: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+input {
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.Header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  color: #fff;
+  line-height: 70px;
+  transition: 0.5s;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.Header.on {
+  background-color: #f9f9f9;
+  color: #222;
+  line-height: 60px;
+}
+
+.Header .hd_wrap {
+  width: 1500px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.Header .hd_wrap h1 a {
+  display: inline-block;
+  font-size: 0;
+  width: 111px;
+  height: 40px;
+  background: url(../public/assets/images/logo.png);
+  vertical-align: middle;
+}
+
+.Header.on .hd_wrap h1 a {
+  background: url(../public/assets/images/logo_bk_01.png);
+}
+
+.Header.on .hd_wrap .Gnb>ul>li>a {
+  font-size: 17px;
+}
+
+.Gnb>ul {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.Gnb>ul>li>a {
+  padding: 18px;
+}
+
+.area_util {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  text-align: center;
+  font-size: 13px;
+}
+
+.area_util>ul {
+  display: flex;
+}
+
+.area_util>ul>li>a {
+  padding: 7px;
+}
+
+.search_btn, 
+.menu_toggle {
+  font-size: 20px;
+  padding: 15px;
+}
+
+.visual_text {
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  color: #fff;
+  width: 1500px;
+  transition: 0.8s;
+  font-family: 'twayfly';
+}
+
+.visual_text p {
+  font-size: 16px;
+  line-height: 23px;
+  font-family: 'Noto Sans KR';
+}
+
+.visual_text h2 {
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 67px;
+  white-space: pre-wrap;
+}
+
+.mySwiper figure img {
+  transition: 15s;
+}
+
+.mySwiper figure.on img {
+  transform: scale(1.2);
+}
+
+.mySwiper figure.on .visual_text {
+  bottom: 10%;
+}
+
+.prevBtn, 
+.nextBtn {
+  position: absolute;
+  top: 50%;
+  z-index: 999;
+}
+
+.prevBtn {
+  padding: 0 10px;
+  left: 120px;
+}
+
+.prevBtn:hover img {
+  animation: bounce 0.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+  from { transform: translate3d(0, 0, 0);     }
+  to   { transform: translate3d(10px, 0, 0); }
+}
+
+.prevBtn::before {
+  content: "PREV";
+  position: absolute;
+  top: -70%;
+  left: 50%;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.nextBtn {
+  right: 120px;
+  padding: 0 10px;
+}
+
+.nextBtn:hover img {
+  animation: bounce 0.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+.nextBtn::before {
+  content: "NEXT";
+  position: absolute;
+  top: -70%;
+  right: 50%;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.search_btn {
+  cursor: pointer;
+}
+
+.modalBody {
+  position: fixed;
+  background-color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #222;
+  text-align: center;
+  padding: 80px 100px;
+  box-shadow: 0 2px 3px 0 rgba(34, 36, 38, 0.15);
+}
+
+.modalBody p {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  font-family: 'twayfly';
+}
+
+.tag_items {
+  display: flex;
+  font-weight: 400;
+}
+
+.tag__item a {
+  padding: 0 15px;
+}
+
+.inp-search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f7f7f7;
+  padding: 15px;
+  width: 90%;
+  margin: 0 auto 30px;
+}
+
+.modalCloseBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+}
+
+.section01.container {
+  text-align: center;
+  padding: 100px 0;
+}
+
+.section01.container h2 {
+  font-size: 34px;
+  font-weight: 700;
+  font-family: 'twayfly';
+}

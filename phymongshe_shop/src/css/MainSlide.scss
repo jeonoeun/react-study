@@ -1,0 +1,93 @@
+@use 'common';
+
+.MainSlide {
+    position: relative;
+    transform: translateY(-8rem);
+    height: calc(100vh - 18rem);
+
+
+    .slick-track {
+        transition-duration: 0.5ms;
+    }
+
+
+    .itm {
+        position: relative;
+        height: calc(100vh - 10rem);
+        color: common.$wColor;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &.itm01 {
+            background-image: url(../../public/assets/img/main_m01.jpg);
+        }
+
+        &.itm02 {
+            background-image: url(../../public/assets/img/main_m02.jpg);
+        }
+
+        &.itm03 {
+            background-image: url(../../public/assets/img/main_m03.jpg);
+        }
+
+        .inner {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            strong {
+                display: block;
+                margin: 0 0 1rem 0;
+                font-size: 1.4rem;
+                text-transform: uppercase;
+            }
+
+            p {
+                margin: 0 0 2rem 0;
+                font-size: 2.5rem;
+            }
+
+            .des {
+                margin: 0 0 2rem 0;
+                font-size: 1.8rem;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+
+            a {
+                text-transform: uppercase;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .slick-dots {
+        position: absolute;
+        bottom: 8rem;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+
+        li {
+            display: inline-block;
+            margin: 0 0.5rem;
+
+            button {
+                width: 4rem;
+                height: 0.4rem;
+                background: common.$mainColor;
+                font-size: 0;
+                border: none;
+                outline: none;
+
+
+            }
+
+            &.slick-active button {
+                background: common.$wColor;
+            }
+        }
+    }
+}

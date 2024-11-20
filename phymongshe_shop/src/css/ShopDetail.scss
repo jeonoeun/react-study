@@ -1,0 +1,103 @@
+@use 'common';
+
+.shopList {
+    padding: 10rem 0;
+
+    .inner {
+        display: grid;
+        flex-wrap: wrap;
+        gap: 5rem 3rem;
+        grid-template-columns: repeat(5, 1fr);
+        figure {
+        }
+
+        .box {
+            margin: 0 0 2rem 0;
+        }
+
+        .name {
+            font-weight: 600;
+            margin: 0 0 1rem 0;
+            min-height: 3rem;
+        }
+
+        .des {
+            font-size: 1.4rem;
+            margin: 0 0 1rem 0;
+            min-height: 10rem;
+        }
+
+        .price {
+            font-size: 1.5rem;
+            font-weight: 500;
+
+            span {
+                color: tomato;
+            }
+        }
+    }
+}
+
+.shopItm {
+    padding: 10rem 0;
+
+    .right {
+        padding: 5rem 0 0 0;
+    }
+
+    .box {
+        margin: 0 0 2rem 0;
+    }
+
+    .name {
+        font-size: 2rem;
+        font-weight: 600;
+        margin: 0 0 1rem 0;
+        min-height: 3rem;
+    }
+
+    .des {
+        font-size: 1.4rem;
+        margin: 0 0 1rem 0;
+        min-height: 10rem;
+    }
+
+    .price {
+        font-size: 1.5rem;
+        font-weight: 500;
+
+        span {
+            color: tomato;
+        }
+
+    }
+
+    .inner {
+        display: flex;
+        gap: 5rem;
+
+        div {
+            flex: 1;
+        }
+
+        .box {
+            padding: 5rem 2rem;
+            text-align: center;
+            border: 1px solid common.$mainColor;
+        }
+    }
+
+    .color {
+        margin: 2rem 0;
+
+        li {
+            display: inline-block;
+            margin: 0 0.5rem 0 0;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            font-size: 0;
+            border: 1px solid rgba($color: #000000, $alpha: 0.1);
+        }
+    }
+}

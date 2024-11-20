@@ -1,0 +1,71 @@
+@use 'common';
+
+.Header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    line-height: 7.9rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+    &.on .gnb {
+        background: common.$wColor;
+    }
+
+    .gnb {
+        position: relative;
+        transition: 0.5s;
+
+        ul {
+            display: flex;
+            gap: 40px;
+            font-size: 1.5rem;
+
+            li {
+                position: relative;
+            }
+
+            .list {
+                text-transform: uppercase;
+                color: common.$mainColor;
+                
+            }
+
+            &.rt {
+                gap: 20px;
+                font-size: 2.5rem;
+                color: rgba(0, 0, 0, 0.35);
+
+                span {
+                    position: absolute;
+                    width: 2rem;
+                    height: 2rem;
+                    font-size: 1.25rem;
+                    padding: 0.5rem;
+                    top: 1.5rem;
+                    right: -1rem;
+                    background: common.$mainColor;
+                    color: common.$wColor;
+                    border-radius: 50%;
+                    line-height: 0.8;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    h1 {
+        position: absolute;
+        top: 0;
+        left: 8rem;
+    }
+
+    .rt {
+        position: absolute;
+        top: 0;
+        right: 8rem;
+    }
+
+
+}
